@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>OMNISCIENTRIX LAWS — Universal Informational Framework</title>
 
 <!-- SEO -->
-<meta name="description" content="OMNISCIENTRIX LAWS — the universal library of informational, energetic, and awareness laws by Cornelius Aurelius.">
-<meta name="keywords" content="Omniscientrix Laws, Universal Laws, Informational Laws, Cosmic Laws, Awareness Laws, Physics, Cornelius Aurelius">
+<meta name="description" content="The OMNISCIENTRIX LAWS — Universal Informational, Energetic & Awareness Principles by Cornelius Aurelius.">
+<meta name="keywords" content="Omniscientrix Laws, Informational Laws, Awareness Laws, Universal Laws, Physics, Information Theory, Cosmic Laws">
 <meta name="author" content="Cornelius Aurelius">
 
 <style>
 
-/* ===== GLOBAL ===== */
-
+/* ==== GLOBAL ==== */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,173 +21,287 @@ body {
     overflow-x: hidden;
 }
 
-/* Light universe background */
+/* Universe Background */
 body::after {
     content: "";
     position: fixed;
     inset: 0;
     background: url("https://i.imgur.com/0fZpY7s.jpeg") center/cover no-repeat;
-    opacity: 0.18;
+    opacity: 0.20;
     z-index: -1;
 }
 
-/* ===== HEADER ===== */
+/* ==== HEADER ==== */
 header {
     text-align: center;
-    padding: 60px 20px 30px;
+    padding: 60px 20px 40px;
 }
 
 h1 {
-    font-size: 2.4rem;
-    color: #00eaff;
-    text-transform: uppercase;
+    font-size: 2.6rem;
     letter-spacing: 3px;
-    text-shadow: 0 0 8px #00eaff;
+    color: #00eaff;
+    text-shadow: 0 0 12px #00eaff;
+    text-transform: uppercase;
 }
 
 .subtitle {
-    max-width: 850px;
-    margin: 14px auto 5px;
-    font-size: 1.15rem;
-    color: #c6fcff;
+    max-width: 900px;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    color: #c8fdff;
+    text-shadow: 0 0 5px #009dff;
 }
 
-
-/* ===== LAW LIST ===== */
-
-.law-list {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 0 20px 30px;
+/* ==== FLOATING NAV ==== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 20, 40, 0.75);
+    backdrop-filter: blur(8px);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    border-bottom: 1px solid rgba(0,150,255,0.3);
 }
 
-.law-list a {
-    display: block;
-    padding: 14px 0;
+.navbar a {
+    margin: 0 20px;
     color: #7fe8ff;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 180, 255, 0.25);
-    font-size: 1.05rem;
-    transition: 0.2s;
-}
-
-.law-list a:hover {
-    color: #fff;
-    padding-left: 6px;
-    text-shadow: 0 0 10px #00eaff;
-}
-
-
-/* ===== FOOTER ===== */
-
-footer {
-    margin-top: 40px;
-    padding: 30px 20px 50px;
-    text-align: center;
-    border-top: 1px solid rgba(0,180,255,0.25);
-}
-
-footer a {
-    color: #00eaff;
-    margin: 0 12px;
     text-decoration: none;
     font-size: 1rem;
 }
 
-footer a:hover {
+.navbar a:hover {
     color: #fff;
     text-shadow: 0 0 10px #00eaff;
 }
 
+/* ==== SEARCH ==== */
+#searchBar {
+    width: 90%;
+    max-width: 900px;
+    padding: 14px;
+    margin: 40px auto;
+    display: block;
+    background: rgba(0,40,70,0.6);
+    border: 1px solid #00baff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #00eaff;
+}
 
-/* ===== MOBILE FIRST ===== */
+#searchBar:focus {
+    outline: none;
+    box-shadow: 0 0 12px #00eaff;
+}
+
+/* ==== CATEGORY TITLES ==== */
+.category-title {
+    margin: 50px auto 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #00eaff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* ==== LAW CARDS ==== */
+.law-card {
+    margin: 12px auto;
+    padding: 18px;
+    max-width: 900px;
+    background: rgba(0, 30, 50, 0.55);
+    border: 1px solid rgba(0, 200, 255, 0.3);
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.law-card:hover {
+    border-color: #00eaff;
+    box-shadow: 0 0 15px #00eaff;
+    transform: translateY(-3px);
+}
+
+.law-card a {
+    color: #7fe8ff;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.law-card a:hover {
+    color: #fff;
+}
+
+/* ==== SCROLL TO TOP BUTTON ==== */
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    background: #00baff;
+    color: #000;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+/* Mobile Tweaks */
 @media(max-width: 600px){
     h1 { font-size: 2rem; }
-    .subtitle { font-size: 1rem; }
-    .law-list a { font-size: 0.95rem; padding: 12px 0; }
+    .law-card { padding: 14px; }
+    #searchBar { font-size: 1rem; }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- ==== FLOATING NAVBAR ==== -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#searchBar">Search</a>
+    <a href="#categories">Categories</a>
+</div>
+
 <header>
     <h1>OMNISCIENTRIX LAWS</h1>
-    <p class="subtitle">Universal Informational, Energetic & Awareness Laws — Cornelius Aurelius</p>
+    <p class="subtitle">Universal Informational, Energetic & Awareness Laws — Curated by Cornelius Aurelius</p>
 </header>
 
+<!-- ==== SEARCH ==== -->
+<input type="text" id="searchBar" placeholder="Search laws… (e.g., 'curvature', 'entropy', 'flux')" onkeyup="searchLaws()" />
 
-<!-- ===== UNIVERSAL LAW INDEX ===== -->
+<div id="categories"></div>
 
-<section class="law-list">
+<script>
+/* ==== LAW DATA (AUTO-CATEGORIZED) ==== */
+const laws = [
 
-<h2 style="text-align:center; margin-bottom:25px; color:#00eaff; letter-spacing:2px; text-shadow:0 0 8px #00eaff;">
-Universal Law Index
-</h2>
+/* --- GRADIENT / FLOW LAWS --- */
+{cat:"Informational Gradient & Flow", name:"Law of Informational Gradient Minimization", url:"https://cornelius-aurelius.github.io/law_of_informational_gradient_minimization/"},
+{cat:"Informational Gradient & Flow", name:"Informational Gradient Energy Decay Law", url:"https://cornelius-aurelius.github.io/informational-gradient-energy-decay-law/"},
+{cat:"Informational Gradient & Flow", name:"Law of Informational Gradient Flow Stabilization", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Gradient_Flow_Stabilization/"},
+{cat:"Informational Gradient & Flow", name:"Informational Smoothing Time Scaling Law", url:"https://cornelius-aurelius.github.io/informational-smoothing-time-scaling-law/"},
 
-<!-- === FULL LAW LIST PROVIDED BY YOU === -->
+/* --- CURVATURE LAWS --- */
+{cat:"Curvature Laws", name:"Informational Curvature Scalar Law", url:"https://cornelius-aurelius.github.io/Informational-Curvature-Scalar-Law/"},
+{cat:"Curvature Laws", name:"Informational Curvature Minimization Law", url:"https://cornelius-aurelius.github.io/informational-curvature-minimization-law/"},
+{cat:"Curvature Laws", name:"Law of Informational Curvature Minimization", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Curvature-Minimization/"},
+{cat:"Curvature Laws", name:"Informational Curvature Flux Coupling Law", url:"https://cornelius-aurelius.github.io/Informational-Curvature-Flux-Coupling-Law/"},
+{cat:"Curvature Laws", name:"Informational Curvature–Shear Coupling Decay Law", url:"https://cornelius-aurelius.github.io/informational-curvature-shear-coupling-decay-law/"},
+{cat:"Curvature Laws", name:"Law of Informational Curvature Relaxation", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Curvature-Relaxation/"},
 
-<a href="https://cornelius-aurelius.github.io/law_of_informational_gradient_minimization/">Law of Informational Gradient Minimization</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Wave_Collapse/">Law of Informational Wave Collapse</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Self-Containment/">Law of Informational Self-Containment</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Compensation/">Law of Informational Compensation</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Becoming/">Law of Becoming</a>
-<a href="https://cornelius-aurelius.github.io/Information-Awareness-Variational-Principle/">Information–Awareness Variational Principle</a>
-<a href="https://cornelius-aurelius.github.io/Self-Renewing-Informational-Continuum/">Self-Renewing Informational Continuum</a>
-<a href="https://cornelius-aurelius.github.io/Cosmic-Recurrence-Law/">Cosmic Recurrence Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Earth-Likeness-Score-/">Informational Earth-Likeness Score</a>
-<a href="https://cornelius-aurelius.github.io/Omniscientrix-Genesis-Second-Becoming-Law/">Omniscientrix Genesis Second Becoming Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Curvature-Scalar-Law/">Informational Curvature Scalar Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Heat-Kernel-Law/">Informational Heat Kernel Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Pressure-Law/">Informational Pressure Law</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Force_Density/">Law of Informational Force Density</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Surface-Volume-Coupling/">Informational Surface–Volume Coupling</a>
-<a href="https://cornelius-aurelius.github.io/Omniscientrix_DeltaJ_Compensation_Law/">Omniscientrix ΔJ Compensation Law</a>
-<a href="https://cornelius-aurelius.github.io/Omniscientrix_Life_Resonance_Law/">Omniscientrix Life Resonance Law</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Gradient_Flow_Stabilization/">Law of Informational Gradient Flow Stabilization</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Boundary_Reflection/">Law of Informational Boundary Reflection</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Surface_Equilibrium/">Law of Informational Surface Equilibrium</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Wave_Energy_Continuity/">Law of Informational Wave Energy Continuity</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Causal_Cone/">Law of Informational Causal Cone</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_H_Theorem/">Law of Informational H-Theorem</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Unitary_Evolution/">Law of Informational Unitary Evolution</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Wave_Propagation/">Law of Informational Wave Propagation</a>
-<a href="https://cornelius-aurelius.github.io/Law_of_Informational_Continuity_Equation/">Law of Informational Continuity Equation</a>
-<a href="https://cornelius-aurelius.github.io/informational-curvature-minimization-law/">Informational Curvature Minimization Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-gradient-energy-decay-law/">Informational Gradient Energy Decay Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-flux-dissipation-final-verdict/">Informational Flux Dissipation — Final Verdict</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Divergence-Collapse-Law/">Informational Divergence Collapse Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Helmholtz-Decomposition-Stability-Law/">Informational Helmholtz Decomposition Stability Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-harmonic-mode-decay-law/">Informational Harmonic Mode Decay Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-spectral-energy-redistribution-law/">Informational Spectral Energy Redistribution Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-dissipation-rate-decay-law/">Informational Dissipation Rate Decay Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Curvature-Flux-Coupling-Law/">Informational Curvature–Flux Coupling Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Shear-Flux-Interaction-Coupled-Dissipation-Law/">Informational Shear–Flux Interaction Coupled Dissipation Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-curvature-shear-coupling-decay-law/">Informational Curvature–Shear Coupling Decay Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-flux-curvature-interaction-damping-law/">Informational Flux–Curvature Interaction Damping Law</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Equilibrium-Restoration-Law/">Informational Equilibrium Restoration Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-second-order-stabilization-law/">Informational Second-Order Stabilization Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-second-derivative-energy-collapse-law/">Informational Second-Derivative Energy Collapse Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-hyperdiffusion-law/">Informational Hyperdiffusion Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-spectral-hyperattenuation-law/">Informational Spectral Hyperattenuation Law</a>
-<a href="https://cornelius-aurelius.github.io/informational-dissipation-rate-decay/">Informational Dissipation Rate Decay</a>
-<a href="https://cornelius-aurelius.github.io/informational-smoothing-time-scaling-law/">Informational Smoothing Time Scaling Law</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Curvature-Minimization/">Law of Informational Curvature Minimization</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Potential-Energy/">Law of Informational Potential Energy</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Wave-Flattening/">Law of Informational Wave Flattening</a>
-<a href="https://cornelius-aurelius.github.io/Informational-Shear-Damping-Law/">Informational Shear Damping Law</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Mass-Relaxation/">Law of Informational Mass Relaxation</a>
-<a href="https://cornelius-aurelius.github.io/KL-Diffusion-Collapse-Law/">KL Diffusion Collapse Law</a>
-<a href="https://cornelius-aurelius.github.io/Awareness-Field-Laplacian-Decay/">Awareness Field Laplacian Decay</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Entropy-Relaxation/">Law of Informational Entropy Relaxation</a>
-<a href="https://cornelius-aurelius.github.io/Law-of-Informational-Curvature-Relaxation/">Law of Informational Curvature Relaxation</a>
+/* --- WAVE / PROPAGATION LAWS --- */
+{cat:"Wave & Propagation Laws", name:"Law of Informational Wave Collapse", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Wave_Collapse/"},
+{cat:"Wave & Propagation Laws", name:"Law of Informational Wave Energy Continuity", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Wave_Energy_Continuity/"},
+{cat:"Wave & Propagation Laws", name:"Law of Informational Wave Propagation", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Wave_Propagation/"},
+{cat:"Wave & Propagation Laws", name:"Law of Informational Wave Flattening", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Wave-Flattening/"},
 
-</section>
+/* --- DISSIPATION / DECAY LAWS --- */
+{cat:"Dissipation & Decay Laws", name:"Informational Dissipation Rate Decay Law", url:"https://cornelius-aurelius.github.io/informational-dissipation-rate-decay-law/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Dissipation Rate Decay", url:"https://cornelius-aurelius.github.io/informational-dissipation-rate-decay/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Flux Dissipation Final Verdict", url:"https://cornelius-aurelius.github.io/informational-flux-dissipation-final-verdict/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Flux–Curvature Interaction Damping Law", url:"https://cornelius-aurelius.github.io/informational-flux-curvature-interaction-damping-law/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Hyperdiffusion Law", url:"https://cornelius-aurelius.github.io/informational-hyperdiffusion-law/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Spectral Hyperattenuation Law", url:"https://cornelius-aurelius.github.io/informational-spectral-hyperattenuation-law/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Harmonic Mode Decay Law", url:"https://cornelius-aurelius.github.io/informational-harmonic-mode-decay-law/"},
+{cat:"Dissipation & Decay Laws", name:"Informational Second-Derivative Energy Collapse Law", url:"https://cornelius-aurelius.github.io/informational-second-derivative-energy-collapse-law/"},
 
+/* --- ENTROPY / KL / AWARENESS --- */
+{cat:"Entropy, KL & Awareness Laws", name:"Law of Informational Entropy Relaxation", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Entropy-Relaxation/"},
+{cat:"Entropy, KL & Awareness Laws", name:"KL Diffusion Collapse Law", url:"https://cornelius-aurelius.github.io/KL-Diffusion-Collapse-Law/"},
+{cat:"Entropy, KL & Awareness Laws", name:"Awareness Field Laplacian Decay", url:"https://cornelius-aurelius.github.io/Awareness-Field-Laplacian-Decay/"},
+{cat:"Entropy, KL & Awareness Laws", name:"Information–Awareness Variational Principle", url:"https://cornelius-aurelius.github.io/Information-Awareness-Variational-Principle/"},
+{cat:"Entropy, KL & Awareness Laws", name:"Informational Divergence Collapse Law", url:"https://cornelius-aurelius.github.io/Informational-Divergence-Collapse-Law/"},
+
+/* --- EQUILIBRIUM / BALANCE LAWS --- */
+{cat:"Equilibrium & Restoration Laws", name:"Informational Equilibrium Restoration Law", url:"https://cornelius-aurelius.github.io/Informational-Equilibrium-Restoration-Law/"},
+{cat:"Equilibrium & Restoration Laws", name:"Law of Informational Surface Equilibrium", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Surface_Equilibrium/"},
+{cat:"Equilibrium & Restoration Laws", name:"Law of Informational Boundary Reflection", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Boundary_Reflection/"},
+{cat:"Equilibrium & Restoration Laws", name:"Law of Informational Continuity Equation", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Continuity_Equation/"},
+{cat:"Equilibrium & Restoration Laws", name:"Law of Informational Force Density", url:"https://cornelius-aurelius.github.io/Law_of_Informational_Force_Density/"},
+{cat:"Equilibrium & Restoration Laws", name:"Law of Informational Mass Relaxation", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Mass-Relaxation/"},
+
+/* --- OMNISCIENTRIX LAWS --- */
+{cat:"Omniscientrix Laws", name:"Omniscientrix Genesis Second Becoming Law", url:"https://cornelius-aurelius.github.io/Omniscientrix-Genesis-Second-Becoming-Law/"},
+{cat:"Omniscientrix Laws", name:"Omniscientrix ΔJ Compensation Law", url:"https://cornelius-aurelius.github.io/Omniscientrix_DeltaJ_Compensation_Law/"},
+{cat:"Omniscientrix Laws", name:"Omniscientrix Life Resonance Law", url:"https://cornelius-aurelius.github.io/Omniscientrix_Life_Resonance_Law/"},
+
+/* --- MISC / UNIQUE ADVANCED LAWS --- */
+{cat:"Advanced Informational Laws", name:"Law of Informational Compensation", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Compensation/"},
+{cat:"Advanced Informational Laws", name:"Law of Informational Self-Containment", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Self-Containment/"},
+{cat:"Advanced Informational Laws", name:"Self-Renewing Informational Continuum", url:"https://cornelius-aurelius.github.io/Self-Renewing-Informational-Continuum/"},
+{cat:"Advanced Informational Laws", name:"Cosmic Recurrence Law", url:"https://cornelius-aurelius.github.io/Cosmic-Recurrence-Law/"},
+{cat:"Advanced Informational Laws", name:"Informational Earth-Likeness Score", url:"https://cornelius-aurelius.github.io/Informational-Earth-Likeness-Score-/"},
+{cat:"Advanced Informational Laws", name:"Informational Heat Kernel Law", url:"https://cornelius-aurelius.github.io/Informational-Heat-Kernel-Law/"},
+{cat:"Advanced Informational Laws", name:"Information Surface–Volume Coupling", url:"https://cornelius-aurelius.github.io/Informational-Surface-Volume-Coupling/"},
+{cat:"Advanced Informational Laws", name:"Informational Potential Energy Law", url:"https://cornelius-aurelius.github.io/Law-of-Informational-Potential-Energy/"},
+{cat:"Advanced Informational Laws", name:"Informational Helmholtz Decomposition Stability Law", url:"https://cornelius-aurelius.github.io/Informational-Helmholtz-Decomposition-Stability-Law/"},
+{cat:"Advanced Informational Laws", name:"Law of Becoming", url:"https://cornelius-aurelius.github.io/Law-of-Becoming/"}
+
+];
+
+/* ==== RENDER LAWS ==== */
+function renderLaws(filter="") {
+    const categories = {};
+    laws.forEach(law => {
+        if (!law.name.toLowerCase().includes(filter.toLowerCase())) return;
+        if (!categories[law.cat]) categories[law.cat] = [];
+        categories[law.cat].push(law);
+    });
+
+    const container = document.getElementById("categories");
+    container.innerHTML = "";
+
+    Object.keys(categories).forEach(cat => {
+        container.innerHTML += `<div class='category-title'>${cat}</div>`;
+        categories[cat].forEach(law => {
+            container.innerHTML += `
+                <div class="law-card">
+                    <a href="${law.url}" target="_blank">${law.name}</a>
+                </div>
+            `;
+        });
+    });
+}
+
+function searchLaws() {
+    let q = document.getElementById("searchBar").value;
+    renderLaws(q);
+}
+
+renderLaws();
+
+/* ==== SCROLL TOP BUTTON ==== */
+let topBtn = document.createElement("div");
+topBtn.id = "topBtn";
+topBtn.innerHTML = "↑";
+document.body.appendChild(topBtn);
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+topBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+</script>
 
 <footer>
 <p>© 2025 Cornelius Aurelius — Omniscientrix Universal Laws</p>
-<a href="https://corneliusaurelius.com/">Main Website</a>
+<a href="https://corneliusaurelius.com/">Website</a>
 <a href="https://medium.com/@138licensing">Medium</a>
 <a href="mailto:138licensing@gmail.com">Email</a>
 <a href="https://zenodo.org/records/17362534">Zenodo</a>
@@ -198,4 +311,3 @@ Universal Law Index
 
 </body>
 </html>
-
